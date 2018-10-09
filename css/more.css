@@ -1,0 +1,180 @@
+	.header-content-left-nav-first-more{
+				position: relative;	
+				z-index: 50;
+				
+				
+			}
+				.header-content-left-nav-first-more:hover .more-content{
+					display: block;
+				}
+				.more-content:hover{
+					display: block;
+				}
+	      .more-content{
+	      	display: none;
+	      	width: 900px;
+	      	height: 640px;
+	      	position: absolute;
+	      	top: 28px;
+	      	 right: -144px;
+	      	 background: #ffffff;
+	      	 border: 1px solid red;
+             border-left: none;
+         
+    	
+	      }
+	      .more-content-left{
+	      	width:380px;
+	      	
+	      	box-sizing: border-box;
+	      	position: absolute;
+	        right: 520px;
+	        top: 29px;
+	      
+	      	
+	      	
+	      }
+	      .more-content-right{
+	      	width: 447px;
+	      	
+	      	box-sizing: border-box;
+	        position: absolute;
+	        right:0px;
+	        top: 29px;
+	      }
+	      /*一HOVERspan文字变红,背景变灰*/
+	      .more-content span:hover{
+	      	background: #f3f3f5;
+	      	color: #fd521d;
+	      }
+	      
+	      
+	      /*左边有字母div总*/
+	       .more-left1{
+	      	width: 396px;
+	      	margin-bottom: 8px;
+	      }
+	      /*hover到div后第一个变红,文字变白*/
+	      .more-left1:hover .more-left1-first{
+	      	background: red;
+	      	color: white;
+	      }
+	      .more-content-hoverWordChange:hover .more-left1-first{
+	      	background: red;
+	      	color: white;
+	      }
+	      /*左边有字母span标签*/
+	        .more-left1 span{
+	      	padding: 0px 4px;
+	      	margin-right: 5px;
+	      	
+	      }
+	      /*左边有字母span标签第一个*/
+	        .more-left1 .more-left1-first{
+	        padding: 0px 6px;
+	      	margin-right: 12px;
+	      	margin-left: 9px;
+	      	font-size: 15px;
+	      	color: #fd521d;
+	      }
+	       /*左边没字母div总*/
+	         .more-left2{
+	      	width: 386px;
+	      	margin-bottom: 2px;
+	      }
+	      
+	     
+	       /*左边没字母span标签*/
+	        .more-left2 span{
+	      	padding: 0px 6px;
+	      	margin-right: 5px;
+	      	
+	      }
+	           /*左边没字母span标签第一个*/
+	        .more-left2 .more-left2-first{
+	      	margin-right: 7px;
+	      	margin-left: 47px;
+	      	font-size: 15px;
+	      	
+	      }
+	      
+	      /*右边有字母div总*/
+	      .more-content-right .more-left1{
+	      	width: 430px;
+	      	margin-bottom: 8px;
+	      }
+	      /*右边有字母span标签*/
+	       .more-content-right .more-left1 span{
+	      	padding: 0px 6px;
+	      	margin-right: 5px;
+	      	
+	      }
+	          /*右边有字母span标签第一个*/
+	       .more-content-right .more-left1 .more-left1-first{
+	      	margin-right: 12px;
+	      	margin-left: 9px;
+	      	font-size: 15px;
+	      }
+	      
+	         /*右边没字母div总*/
+	          .more-content-right .more-left2{
+	      	width: 386px;
+	      	margin-bottom: 2px;
+	      }
+	       /*右边没字母span标签*/
+	         .more-content-right .more-left2 span{
+	      	padding: 0px 6px;
+	      	margin-right: 5px;
+	      	
+	      }
+	           /*右边没字母span标签第一个*/
+	         .more-content-right .more-left2 .more-left2-first{
+	      	margin-right: 7px;
+	      	margin-left: 47px;
+	      	font-size: 15px;
+	      }
+	      
+	       .more-content .moer-content-binli{
+	      	margin-bottom: 11px;
+	      }
+	      .more-content-deg{
+	      	position: absolute;
+	      	    width: 7px;
+				height: 7px;
+				border-top:1px solid red;
+				border-left:1px solid red;
+				position: absolute;
+				transform:rotate(45deg);
+				top: -5px;
+				right: 159px;
+				z-index: 100;
+				background: white;
+	      }
+	      
+	      .header-content-compass{
+	      	 position: absolute;
+	      	 top: 3px;
+	      	 left: 102px;
+	      	 z-index: 101;
+	      	 display: block;
+	      	 animation: compassMove 15s ease-out;
+	      	transition: all 2s; 
+	      }
+	      @keyframes compassMove{
+	      	0%{left: 102px;display: block;}
+	      	10%{left: 883px;display: block;}	
+	      	50%{left: 883px;display: block;}
+	      	60%{left: 102px;display: none;}
+	      	100%{left: 102px;display: block;}
+	      }
+	      
+	      /*当left尾883时,*/
+	       .header-content-compass img{
+	       	height: 70px;
+	       }
+	     .header-content{
+	     	position: relative;
+	     	width: 1223px;
+    margin-left: auto;
+    margin-right: auto;
+	     }
