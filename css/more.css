@@ -154,18 +154,18 @@
 	      .header-content-compass{
 	      	 position: absolute;
 	      	 top: 3px;
-	      	 left: 102px;
+	      	 left: 48px;
 	      	 z-index: 101;
 	      	 display: block;
 	      	 animation: compassMove 15s ease-out;
 	      	transition: all 2s; 
 	      }
 	      @keyframes compassMove{
-	      	0%{left: 102px;display: block;}
-	      	10%{left: 883px;display: block;}	
-	      	50%{left: 883px;display: block;}
-	      	60%{left: 102px;display: none;}
-	      	100%{left: 102px;display: block;}
+	   ·   	0%{left: 48px;display: block;}
+	      	10%{left: 790px;display: block;}	
+	      	50%{left: 790px;display: block;}
+	      	60%{left: 48px;display: none;}
+	      	100%{left: 48px;display: block;}
 	      }
 	      
 	      /*当left尾883时,*/
@@ -175,6 +175,6 @@
 	     .header-content{
 	     	position: relative;
 	     	width: 1223px;
-    margin-left: auto;
-    margin-right: auto;
+            margin-left: auto;
+          margin-right: auto;
 	     }
