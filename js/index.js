@@ -1,10 +1,21 @@
      //  鼠标滑动头部两个快显示
     var headerSpecialLi=document.getElementsByClassName('header-top-text-nav-special');
+               var specialLi=false
                document.onscroll=function(){
+               	  specialLi=true;
                	 for(var i=0;i<headerSpecialLi.length;i++){
                	     headerSpecialLi[i].style.background='red';
                  }
-               }
+               } 
+               
+              
+                 for(var i=0;i<headerSpecialLi.length;i++){
+               	    headerSpecialLi[i].onmouseenter=function(){
+               	      if(specialLi){
+               	         this.style.color='black';
+               	    	}
+               	      }
+                  }
                
 
                //             轮播图滑动代码效果
