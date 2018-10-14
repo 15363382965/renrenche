@@ -9,13 +9,16 @@
                } 
                
               
-                 for(var i=0;i<headerSpecialLi.length;i++){
-               	    headerSpecialLi[i].onmouseenter=function(){
-               	      if(specialLi){
-               	         this.style.color='black';
-               	    	}
-               	      }
+               	 for(var i=0;i<headerSpecialLi.length;i++){
+               	    	headerSpecialLi[i].onmouseenter=function(){
+               	    		if(specialLi){
+               	    			  this.style.color='black';
+               	    		}
+               	       }
                   }
+               
+
+               
                
 
                //             轮播图滑动代码效果
@@ -143,14 +146,14 @@
 				var aGouDisable=document.getElementsByClassName('radio-choose1-block');
 				
 				for(var i=0;i<aGouDisable.length;i++){
-					
 					aGouDisable[i].index=i;
-					aGouDisable[i].onclick=function(){
-						for(var i=0;i<aGouDisable.length;i++){
+						
+					    aGouDisable[i].onclick=function(){ 
+					    	for(var i=0;i<aGouDisable.length;i++){
 							aGouDisable[i].style.display='block';
 							aGouAble[i].style.display='none';
-						}
-						aGouAble[this.index].style.display='block';
+					     }
+                         aGouAble[this.index].style.display='block';
 						this.style.display='none';
 					}
 				}
@@ -160,9 +163,9 @@
       var aContentTopli=document.getElementsByClassName('content-nav-topUl-li');
       var aContentTopBlock=document.getElementsByClassName('content-nav-topInner');
       
-      for(var i=0;i<aContentTopli.length;i++){
+      for(var i=0;i<aContentTopli.length;i++){             
       	aContentTopli[i].index=i;
-      	aContentTopli[i].onmouseover=function(){
+      	aContentTopli[i].onmouseover=function(){                   
       		for(var i=0;i<aContentTopBlock.length;i++){
       		   aContentTopBlock[i].classList.remove('activeUl');
       		   aContentTopli[i].classList.remove('activeLi');
@@ -241,10 +244,10 @@ var aContent_nav_circle=document.getElementsByClassName('content-new-navCircle')
      var buyAndSellLeft=document.getElementsByClassName('header-content-left')[0];
      var buyAndSellRight=document.getElementsByClassName('header-content-right')[0];
       buyAndSellLeft.onmouseenter=function(){
-      	buyAndSell.style.left=102+'px';
+      	buyAndSell.style.left=48+'px';
       }
       
       buyAndSellRight.onmouseenter=function(){
-      	buyAndSell.style.left=883+'px';
+      	buyAndSell.style.left=790+'px';
       }
 //************************************************
